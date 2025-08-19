@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
   return (
@@ -23,12 +26,12 @@ export default function Home() {
             <a href="#pricing" className="text-sm hover:opacity-80">
               Pricing
             </a>
-            <a
-              href="#download"
+            <Link
+              href="/downloads"
               className="inline-flex items-center rounded-full bg-[#5E6AD2] text-white px-4 py-2 text-sm font-medium hover:opacity-90"
             >
               Download
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -45,8 +48,8 @@ export default function Home() {
             help you reach your productivity goals.
           </p>
           <div className="mt-8 flex items-center justify-center gap-3">
-            <a
-              href="#download"
+            <Link
+              href="/downloads"
               className="inline-flex items-center gap-2 rounded-full bg-[#5E6AD2] text-white px-5 py-3 text-sm font-medium hover:opacity-90"
             >
               <svg
@@ -58,7 +61,7 @@ export default function Home() {
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
               </svg>
               Download for macOS
-            </a>
+            </Link>
             <a
               href="#features"
               className="inline-flex items-center rounded-full border border-black/10 dark:border-white/20 px-5 py-3 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/5"
@@ -197,8 +200,8 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-medium text-lg">Gentle nudges</h3>
               <p className="text-sm text-black/70 dark:text-white/70 mt-1">
-                Get notified when you&apos;re getting distracted with context-aware
-                alerts
+                Get notified when you&apos;re getting distracted with
+                context-aware alerts
               </p>
             </div>
           </div>
@@ -235,7 +238,7 @@ export default function Home() {
               author="Sara, Product Designer at a startup"
             />
             <Testimonial
-              quote="DeepWork stops me from going down a 2 hour doom-scrolling rabbit hole and makes it so much easier to lock in for exams."
+              quote="DeepWork stops me from going down 3 hour doom-scrolling rabbit holes and makes it so much easier to lock in."
               author="Brian, Biology major at NYU"
             />
             <Testimonial
@@ -252,7 +255,7 @@ export default function Home() {
           Pricing
         </h2>
         <p className="text-center text-black/70 dark:text-white/70 mt-3 max-w-2xl mx-auto">
-          Start free. Pay how you want.
+          Start free. Pay how you want and cancel anytime.
         </p>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -278,6 +281,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-center">
+          Frequently Asked Questions
+        </h2>
+
+        <div className="mt-12 max-w-3xl mx-auto space-y-4">
+          <FAQItem
+            question="How does DeepWork work?"
+            answer="Our proprietary AI model analyzes your screen activity and application usage patterns to identify when you're getting distracted. It uses machine learning to understand the difference between productive work and distracting activities, then sends gentle notifications to help you refocus."
+          />
+          <FAQItem
+            question="Is my data private and secure?"
+            answer="Absolutely. All your data that we store is directly visible to you, and you can delete it at any time. It should go without saying, but we will never sell your data to third parties."
+          />
+          <FAQItem
+            question="Can I customize the focus sessions?"
+            answer="Yes! You can set custom session lengths, choose different types of work modes, customize distraction sensitivity, and set specific goals for each session. The app adapts to your workflow and preferences."
+          />
+          <FAQItem
+            question="How much does it cost after the free trial?"
+            answer="After your 7-day free trial, you can choose between $9.99/month or $83.99/year (which saves you 30%). You can cancel anytime with no commitments."
+          />
+          <FAQItem
+            question="Will this slow down my computer?"
+            answer="Not at all. Deepwork AI is designed to be lightweight and efficient. It uses minimal system resources and runs quietly in the background without affecting your Mac's performance."
+          />
+          <FAQItem
+            question="Is DeepWork available on PC/Windows?"
+            answer="We're working on it! However, currently we only support macOS."
+          />
+          <FAQItem
+            question="I have more questions!"
+            answer="Please do not hesitate to reach out to us at support@deepwork.fit"
+          />
+        </div>
+      </section>
+
       {/* Download */}
       <section
         id="download"
@@ -291,12 +332,12 @@ export default function Home() {
             Universal build for Apple Silicon and Intel
           </p>
           <div className="mt-8 flex items-center justify-center gap-3">
-            <a
-              href="/downloads/DeepworkAI-latest.dmg"
+            <Link
+              href="/downloads"
               className="inline-flex items-center rounded-full bg-[#5E6AD2] text-white px-6 py-3 text-sm font-medium hover:opacity-90"
             >
               Download .dmg
-            </a>
+            </Link>
             <a
               href="#"
               className="inline-flex items-center rounded-full border border-black/10 dark:border-white/20 px-6 py-3 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/5"
@@ -313,11 +354,56 @@ export default function Home() {
           <p>© {new Date().getFullYear()} Deepwork AI. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy">Privacy</Link>
-            <Link href="#">Terms</Link>
-            <a href="mailto:hello@deepwork.ai">Contact</a>
+            <Link href="/terms">Terms</Link>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
       </footer>
+    </div>
+  );
+}
+
+type FAQItemProps = {
+  question: string;
+  answer: string;
+};
+
+function FAQItem({ question, answer }: FAQItemProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="rounded-2xl border border-black/10 dark:border-white/15 bg-white/50 dark:bg-black/30">
+      <button
+        className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded-2xl"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+      >
+        <h3 className="font-medium text-sm sm:text-base pr-4">{question}</h3>
+        <div className="flex-shrink-0">
+          <svg
+            className={`w-5 h-5 transition-transform duration-200 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </button>
+      {isOpen && (
+        <div className="px-6 pb-4">
+          <p className="text-sm text-black/70 dark:text-white/70 leading-relaxed">
+            {answer}
+          </p>
+        </div>
+      )}
     </div>
   );
 }
@@ -433,8 +519,8 @@ function Plan({
         </ul>
       )}
       <div className="mt-6">
-        <a
-          href="#download"
+        <Link
+          href="/downloads"
           className={`inline-flex items-center rounded-full px-5 py-2 text-sm font-medium ${
             highlighted
               ? "bg-white text-[#5E6AD2] hover:opacity-90"
@@ -442,7 +528,7 @@ function Plan({
           }`}
         >
           {cta}
-        </a>
+        </Link>
       </div>
     </div>
   );
