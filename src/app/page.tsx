@@ -197,7 +197,7 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-medium text-lg">Gentle nudges</h3>
               <p className="text-sm text-black/70 dark:text-white/70 mt-1">
-                Get notified when you're getting distracted with context-aware
+                Get notified when you&apos;re getting distracted with context-aware
                 alerts
               </p>
             </div>

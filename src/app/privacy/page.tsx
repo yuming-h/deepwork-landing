@@ -23,12 +23,12 @@ export default function Privacy() {
             <Link href="/#pricing" className="text-sm hover:opacity-80">
               Pricing
             </Link>
-            <a
+            <Link
               href="/#download"
               className="inline-flex items-center rounded-full bg-[#5E6AD2] text-white px-4 py-2 text-sm font-medium hover:opacity-90"
             >
               Download
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -41,7 +41,7 @@ export default function Privacy() {
           </h1>
 
           <p className="text-lg text-black/70 dark:text-white/70 mb-8">
-            At Deepwork AI, your privacy isn't just important to us—it's
+            At Deepwork AI, your privacy isn&apos;t just important to us—it&apos;s
             fundamental to everything we do.
           </p>
 
@@ -69,7 +69,7 @@ export default function Privacy() {
             </h2>
             <p className="mb-4">
               Deepwork AI is designed to be minimally invasive. We only collect
-              information that's necessary to provide you with the best focus
+              information that&apos;s necessary to provide you with the best focus
               experience:
             </p>
             <ul className="space-y-2 mb-4">
@@ -103,7 +103,7 @@ export default function Privacy() {
                 encrypted using industry-standard protocols
               </li>
               <li>
-                • <strong>Minimal Storage:</strong> We store only what's
+                • <strong>Minimal Storage:</strong> We store only what&apos;s
                 necessary to sync your progress across devices
               </li>
               <li>
@@ -146,11 +146,11 @@ export default function Privacy() {
             <ul className="space-y-2 mb-4">
               <li>
                 • <strong>Authentication:</strong> Secure login services that
-                don't access your personal data
+                don&apos;t access your personal data
               </li>
               <li>
                 • <strong>Analytics:</strong> Privacy-focused analytics that
-                don't track individuals
+                don&apos;t track individuals
               </li>
               <li>
                 • <strong>Hosting:</strong> Secure cloud infrastructure with
@@ -172,13 +172,13 @@ export default function Privacy() {
             </p>
             <ul className="space-y-2 mb-4">
               <li>
-                • We'll notify you via email if there are significant changes
+                • We&apos;ll notify you via email if there are significant changes
               </li>
               <li>
-                • We'll post the updated policy with a clear revision date
+                • We&apos;ll post the updated policy with a clear revision date
               </li>
               <li>
-                • We'll never retroactively change how we handle data you've
+                • We&apos;ll never retroactively change how we handle data you&apos;ve
                 already provided
               </li>
             </ul>
@@ -188,7 +188,7 @@ export default function Privacy() {
             <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
             <p className="mb-4">
               If you have any questions about this privacy policy or how we
-              handle your data, please don't hesitate to reach out:
+              handle your data, please don&apos;t hesitate to reach out:
             </p>
             <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-6">
               <p className="mb-2">
@@ -201,7 +201,7 @@ export default function Privacy() {
                 </a>
               </p>
               <p>
-                We're committed to transparency and will respond to your privacy
+                We&apos;re committed to transparency and will respond to your privacy
                 questions promptly.
               </p>
             </div>
