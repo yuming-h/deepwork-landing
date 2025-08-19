@@ -270,6 +270,7 @@ export default function Home() {
           <Plan
             title="Annual - 7 days free, then"
             price="$83.99"
+            originalPrice="$120"
             priceSubtext="$7 USD/month"
             tagline="Best value"
             features={[]}
@@ -443,6 +444,7 @@ function Testimonial({ quote, author }: TestimonialProps) {
 type PlanProps = {
   title: string;
   price: string;
+  originalPrice?: string;
   priceSubtext?: string;
   tagline: string;
   features: string[];
@@ -455,6 +457,7 @@ type PlanProps = {
 function Plan({
   title,
   price,
+  originalPrice,
   priceSubtext,
   tagline,
   features,
@@ -488,7 +491,20 @@ function Plan({
       <div className="text-center">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
         <div className="mb-2">
-          <div className="text-3xl font-bold">{price}</div>
+          <div className="flex items-center justify-center gap-3">
+            {originalPrice && (
+              <div
+                className={`text-3xl font-bold line-through ${
+                  highlighted
+                    ? "text-white/70"
+                    : "text-black/60 dark:text-white/60"
+                }`}
+              >
+                {originalPrice}
+              </div>
+            )}
+            <div className="text-3xl font-bold">{price}</div>
+          </div>
           {priceSubtext && (
             <div
               className={`text-sm ${
