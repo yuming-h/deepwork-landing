@@ -159,7 +159,7 @@ export default function Downloads() {
                 <path d="M9 12l2 2 4-4" />
                 <circle cx="12" cy="12" r="9" />
               </svg>
-              What's Included
+              What&apos;s Included
             </h3>
             <ul className="text-sm text-black/70 dark:text-white/70 space-y-2">
               <li>• AI-powered distraction detection</li>

@@ -31,7 +31,7 @@ export default function PaymentSuccess() {
             <div className="space-y-4">
               <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
                 <h3 className="font-semibold text-green-800 dark:text-green-200 mb-2">
-                  What's Next?
+                  What&apos;s Next?
                 </h3>
                 <ul className="text-sm text-green-700 dark:text-green-300 space-y-1 text-left">
                   <li>• Check your email for a confirmation receipt</li>
