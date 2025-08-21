@@ -306,6 +306,10 @@ export default function Home() {
             answer="After your 7-day free trial, you can choose between $9.99/month or $83.99/year (which saves you 30%). You can cancel anytime with no commitments."
           />
           <FAQItem
+            question="Can I use DeepWork for free?"
+            answer="We understand that not everyone can pay for a subscription and we are working on a free tier. For now, we need to be able to cover engineering, cloud, and AI inference costs so it is greatly appreciated if you can support us."
+          />
+          <FAQItem
             question="Will this slow down my computer?"
             answer="Not at all. Deepwork AI is designed to be lightweight and efficient. It uses minimal system resources and runs quietly in the background without affecting your Mac's performance."
           />
