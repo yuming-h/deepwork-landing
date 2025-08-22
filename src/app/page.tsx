@@ -136,7 +136,7 @@ export default function Home() {
       {/* Features */}
       <section id="features" className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-center">
-          Designed for you to get it done
+          Designed to help you get it done
         </h2>
         <p className="text-center text-black/70 dark:text-white/70 mt-3 max-w-2xl mx-auto">
           Focus without friction. Build without burnout. Ship what matters.
