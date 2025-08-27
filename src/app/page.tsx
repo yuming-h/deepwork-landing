@@ -155,7 +155,7 @@ export default function Home() {
           />
           <FeatureCard
             title="Distraction Guard"
-            description="AI powered distraction detection to help you stay focused."
+            description="AI distraction detection to keep you focused and away from doomscrolling."
             icon="/window.svg"
           />
           <FeatureCard
