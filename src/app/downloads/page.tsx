@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+const DOWNLOAD_URL =
+  "https://deepwork-releases.s3.us-east-1.amazonaws.com/DeepWorkAI-0.1.4.dmg";
+
 export default function Downloads() {
   const [isDownloading, setIsDownloading] = useState(false);
 
   const handleDownload = () => {
-    window.open(
-      "https://deepwork-releases.s3.us-east-1.amazonaws.com/DeepWorkAI-0.1.3.dmg",
-      "_blank"
-    );
+    window.open(DOWNLOAD_URL, "_blank");
   };
 
   return (

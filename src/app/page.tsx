@@ -223,6 +223,44 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          <div className="space-y-4">
+            <div className="relative rounded-2xl border border-black/10 dark:border-white/15 shadow-xl overflow-hidden bg-white/50 dark:bg-black/30">
+              <Image
+                src="/product/screenshot-break-alert.png"
+                alt="Break reminder notification"
+                width={600}
+                height={400}
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="font-medium text-lg">Break reminders</h3>
+              <p className="text-sm text-black/70 dark:text-white/70 mt-1">
+                Set automatic break reminders for sustainable productivity
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <div className="relative rounded-2xl border border-black/10 dark:border-white/15 shadow-xl overflow-hidden bg-white/50 dark:bg-black/30">
+              <Image
+                src="/product/screenshot-start-session.png"
+                alt="Customize session goals screen"
+                width={600}
+                height={400}
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="font-medium text-lg">
+                Customize your session goals
+              </h3>
+              <p className="text-sm text-black/70 dark:text-white/70 mt-1">
+                Set intentions and goals before you start a session
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
