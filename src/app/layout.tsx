@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deepwork AI — Hit Flow. Finish More.",
+  title: "Deepwork AI — Boost your focus and productivity.",
   description:
-    "Deepwork AI helps you block distractions, stay in flow, and finish meaningful work. A lightweight macOS app designed for makers.",
+    "More powerful than a website blocker. Deepwork AI helps you block distractions, stay in flow, and finish more work. Set your goals for each work session, take breaks when needed, and keep track of progress and time.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7BFE8E9ET"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-C7BFE8E9ET"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
