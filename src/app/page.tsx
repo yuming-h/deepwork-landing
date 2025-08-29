@@ -40,12 +40,12 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 opacity-30 [background:radial-gradient(1200px_600px_at_50%_-200px,theme(colors.black/.25),transparent)] dark:[background:radial-gradient(1200px_600px_at_50%_-200px,theme(colors.white/.12),transparent)]" />
         <div className="mx-auto max-w-6xl px-6 pt-20 pb-12 text-center">
-          <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05]">
-            Avoid distractions. Focus like a pro.
+          <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.05]">
+            Unleash your productivity.
           </h1>
           <p className="mt-5 text-base/7 sm:text-lg/8 text-black/70 dark:text-white/70 max-w-2xl mx-auto">
             A lightweight macOS app that uses AI to keep distractions away and
-            help you reach your productivity goals.
+            help you focus on your productivity goals.
           </p>
           <div className="mt-8 flex items-center justify-center gap-3">
             <Link
