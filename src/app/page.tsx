@@ -41,7 +41,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 opacity-30 [background:radial-gradient(1200px_600px_at_50%_-200px,theme(colors.black/.25),transparent)] dark:[background:radial-gradient(1200px_600px_at_50%_-200px,theme(colors.white/.12),transparent)]" />
         <div className="mx-auto max-w-6xl px-6 pt-20 pb-12 text-center">
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.05]">
-            Unleash your productivity.
+            Unleash your productivity potential.
           </h1>
           <p className="mt-5 text-base/7 sm:text-lg/8 text-black/70 dark:text-white/70 max-w-2xl mx-auto">
             A lightweight macOS app that uses AI to keep distractions away and
