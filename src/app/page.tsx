@@ -26,6 +26,9 @@ export default function Home() {
             <a href="#pricing" className="text-sm hover:opacity-80">
               Pricing
             </a>
+            <Link href="/downloads" className="text-sm hover:opacity-80">
+              Demo
+            </Link>
             <Link
               href="/downloads"
               className="inline-flex items-center rounded-full bg-[#5E6AD2] text-white px-4 py-2 text-sm font-medium hover:opacity-90"
@@ -62,12 +65,21 @@ export default function Home() {
               </svg>
               Download for macOS
             </Link>
-            <a
-              href="#features"
-              className="inline-flex items-center rounded-full border border-black/10 dark:border-white/20 px-5 py-3 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/5"
+            <Link
+              href="/downloads"
+              className="inline-flex items-center gap-2 rounded-full border border-black/10 dark:border-white/20 px-5 py-3 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/5"
             >
-              See how it works
-            </a>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              Watch the demo
+            </Link>
           </div>
           <div className="mt-12 relative mx-auto max-w-5xl rounded-2xl border border-black/10 dark:border-white/15 shadow-2xl overflow-hidden bg-white/50 dark:bg-black/30">
             <Image
