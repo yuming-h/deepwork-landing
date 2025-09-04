@@ -26,7 +26,7 @@ export default function Home() {
             <a href="#pricing" className="text-sm hover:opacity-80">
               Pricing
             </a>
-            <Link href="/downloads" className="text-sm hover:opacity-80">
+            <Link href="/demo" className="text-sm hover:opacity-80">
               Demo
             </Link>
             <Link
@@ -66,7 +66,7 @@ export default function Home() {
               Download for macOS
             </Link>
             <Link
-              href="/downloads"
+              href="/demo"
               className="inline-flex items-center gap-2 rounded-full border border-black/10 dark:border-white/20 px-5 py-3 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/5"
             >
               <svg
