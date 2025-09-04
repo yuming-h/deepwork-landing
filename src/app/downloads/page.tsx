@@ -2,18 +2,22 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
+// Declare fbq type for Facebook Pixel
+declare global {
+  interface Window {
+    fbq?: (command: string, event: string, data?: Record<string, unknown>) => void;
+  }
+}
 
 const DOWNLOAD_URL =
   "https://deepwork-releases.s3.us-east-1.amazonaws.com/DeepWorkAI-0.1.4.dmg";
 
 export default function Downloads() {
-  const [isDownloading, setIsDownloading] = useState(false);
-
   const handleDownload = () => {
     // Track Facebook Pixel download event
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "Lead", {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead", {
         content_name: "DeepWork AI Download",
         content_category: "Software Download",
         value: 0,
@@ -94,10 +98,10 @@ export default function Downloads() {
             <div className="space-y-4 max-w-md mx-auto">
               <button
                 onClick={handleDownload}
-                disabled={isDownloading}
+                disabled={false}
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#5E6AD2] text-white px-6 py-4 text-base font-medium hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isDownloading ? (
+                {false ? (
                   <>
                     <svg
                       className="animate-spin h-5 w-5"
